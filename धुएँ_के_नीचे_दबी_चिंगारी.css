@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    /* background: linear-gradient(135deg, #ffe6f2 0%, #ffd4ec 50%, #ffdaf2 100%); */
+    min-height: 100vh;
+    color: #333;
+    /* background-color: #FFECB3; */
+}
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 10px;
+    border: none;
+    position: fixed;
+}
+.novel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ff0066;
+    /* color: #FF8F00; */
+    letter-spacing: 1px;
+    /* position: fixed; */
+}
+.novel i{
+    margin: 0 10px;
+    color: #ff0033;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.box1{
+    width: 20%;
+    height: 850px;
+    font-size: 1.3rem;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 120px;      /* below header */
+    left: 0;         /* fix to the left edge */
+    width: 20%;
+    /* height: calc(100vh - 140px); */
+    background: white;
+    /* overflow-y: auto; */
+    margin-top: 5px;
+}
+
+
+
+.heads{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.heads:hover{
+    text-decoration: underline;
+    color: red;
+}
+.box3{
+    width: 20%;
+    height: 850px;
+    font-size: 1.3rem;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    right: 0;        /* fix to right edge */
+    width: 20%;
+    /* height: calc(100vh - 140px); */
+    background: white;
+    /* overflow-y: auto; */
+    margin-top: 5px;
+}
+.under:hover{
+    text-decoration:underline ;
+    font-weight: 550;
+}
+.childhood{
+    height: 438px;
+    width: 85%;
+    background-image: url("childhood.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 64px;
+    margin-left: 80px;
+    border: none;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.box2{
+    width: min(970px, 90%);
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+}
+.story-card {
+    width: 140%;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+    /* backdrop-filter: blur(4px); */
+    animation: fadeIn 1.3s ease;
+    margin-left: 45px;
+    margin-top: 95px;
+    background-color: pink;
+    
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+p{
+    font-size: 1.5rem;
+}
+
+.story-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #cc0052;
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+
+    .content {
+        display: block; /* stack everything vertically */
+    }
+
+    .box1, .box3 {
+        position: relative;   /* remove fixed */
+        width: 100%;          /* full width */
+        height: auto;
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .box2 {
+        width: 100%;
+        margin-top: 150px; /* below header */
+        height: auto;
+    }
+
+    .butterflyp {
+        justify-content: center;
+    }
+
+    .butterfly1,
+    .butterfly2 {
+        margin-left: 20px;
+    }
+
+    .childhood {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .titleh {
+        font-size: 3rem; /* reduce giant text for mobile */
+    }
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 10px;
+
+    z-index: 9999; /* 💥 Important */
+}
+@media (max-width: 768px) {
+    .box2 {
+        margin-top: 160px; /* Give enough space under fixed header */
+    }
+}
+.box1 {
+    margin-top: 130px; /* move downward below header */
+}
+@media (max-width: 768px) {
+
+    .box2 {
+        width: 100%;
+        display: block;  /* ❗Remove GRID */
+        margin-top: 170px;
+    }
+
+    .story-card {
+        width: 100%;     /* Fix 140% issue */
+        margin-left: 0;  /* Remove extra side push */
+    }
+}
+/* ===========================
+   PREMIUM FOOTER DESIGN
+=========================== */
+.premium-footer {
+    background: linear-gradient(135deg, #81523F, #3F2A2B);
+    color: white;
+    margin-top: 80px;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons i {
+    font-size: 1.6rem;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* MOBILE FOOTER */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 25px;
+    }
+}
+.box1 ul, .box3 ul {
+    list-style: none;
+    padding-left: 0;
+}
