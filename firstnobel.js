@@ -5,9 +5,9 @@ let body = document.querySelector("body");
 let content = document.querySelectorAll(".content");
 // let footer = document.querySelectorAll("footer");
 let lang = prompt("Enter the language in which you wants to read English or Hindi :");
-if(lang === "English" || lang === "english" ){
+if(lang.trim() === "English" || lang.trim() === "english" ){
     box3.remove();
-}else if(lang === "Hindi" || lang === "hindi" ){
+}else if(lang.trim() === "Hindi" || lang.trim() === "hindi" ){
     // box1.remove();
     box1.replaceWith(box3);
 }else{
@@ -28,5 +28,6 @@ document.querySelectorAll(".under a").forEach(link => {
 window.onload = ()=>{
     document.body.style.opacity = "1";
 }
+
 
 
