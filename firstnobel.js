@@ -7,11 +7,9 @@ let content = document.querySelectorAll(".content");
 let lang = prompt("Enter the language in which you wants to read English or Hindi :");
 if(lang === "English" || lang === "english" ){
     box3.remove();
-    // alert("For Reading in Hindi reload the page and enter language Hindi ");
 }else if(lang === "Hindi" || lang === "hindi" ){
     // box1.remove();
     box1.replaceWith(box3);
-    // alert("For Reading in English reload the page and enter language English ");
 }else{
     alert("Sorry! Found no version in that language");
     box1.remove();
@@ -30,4 +28,5 @@ document.querySelectorAll(".under a").forEach(link => {
 window.onload = ()=>{
     document.body.style.opacity = "1";
 }
+
 
