@@ -136,7 +136,7 @@ header {
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 }
-@media (max-width: 1285px) {
+@media (max-width: 1000px) {
 
     .content {
         display: block; /* stack everything vertically */
@@ -275,4 +275,5 @@ header {
     list-style: none;
     padding-left: 0;
 }
+
 
