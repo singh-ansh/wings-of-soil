@@ -6,3 +6,4 @@ let box2 = document.querySelector(".box2");
 box1.remove();
 box3.remove();
 box2.style.width="85%";
+box2.style.marginTop = "0px";
