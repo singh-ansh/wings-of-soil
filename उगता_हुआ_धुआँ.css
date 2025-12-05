@@ -149,7 +149,7 @@ p{
 
     .box2 {
         width: 100%;
-        margin-top: 150px; /* below header */
+        margin-top: 0px; /* below header */
         height: auto;
     }
 
@@ -173,7 +173,7 @@ p{
 }
 @media (max-width: 768px) {
     .box2 {
-        margin-top: 160px; /* Give enough space under fixed header */
+        margin-top: 0px; /* Give enough space under fixed header */
     }
 }
 @media (max-width: 768px) {
@@ -181,7 +181,7 @@ p{
     .box2 {
         width: 100%;
         display: block;  /* ❗Remove GRID */
-        margin-top: 170px;
+        margin-top: 0px;
     }
 
     .story-card {
@@ -275,3 +275,4 @@ p{
     list-style: none;
     padding-left: 0;
 }
+
