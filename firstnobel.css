@@ -96,7 +96,7 @@ header {
 }
 .box3{
     width: 20%;
-    height: 850px;
+    height:auto;
     font-size: 1.3rem;
     background-color: white;
     text-align: center;
@@ -275,6 +275,7 @@ header {
     list-style: none;
     padding-left: 0;
 }
+
 
 
 
